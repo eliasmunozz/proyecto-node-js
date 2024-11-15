@@ -1,0 +1,10 @@
+extends layout 
+
+block bodyContent 
+    main.container.my-4
+        h1 Detalles de la Venta
+        if venta
+            p Descripción: #{venta.descripcion}
+            img(src=venta.imagen_url, alt='Imagen de la venta', width='300')
+        else
+            p No se encontró la venta.

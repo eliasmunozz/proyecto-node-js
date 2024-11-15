@@ -1,0 +1,31 @@
+CREATE TABLE productos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    descripcion TEXT,
+    precio DECIMAL(10, 2) NOT NULL,
+    stock INT DEFAULT 0,
+    imagen_url VARCHAR(255)
+);
+CREATE TABLE ventas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    producto_id INT,
+    descripcion TEXT,
+    cantidad INT NOT NULL,
+    total DECIMAL(10, 2) NOT NULL,
+    imagen_url VARCHAR(255),
+    fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (producto_id) REFERENCES productos(id)
+);
+
+INSERT INTO productos (nombre, descripcion, precio, stock, imagen_url)
+VALUES
+('Polera Roja', 'Polera negrita rojita', 12990, 20, 'assets/polera2.png'),
+('Polera Negra', 'Polera negrea', 14990, 15, 'assets/polera.png'),
+('Polera roja', 'Polera wapa', 7990, 30, 'assets/polera2.png');
+
+
+INSERT INTO ventas (producto_id, descripcion, cantidad, total, imagen_url)
+VALUES
+(1, 'Mensaje de la venta awkdjadw', 2, 25980, 'assets/mensajeIMG.png'),
+(2, 'pedrito mensaje', 1, 14990, 'assets/mensajeIMG.png'),productos
+(3, 'owdkljawkjdkawjkdjawd', 3, 23970, 'assets/mensajeIMG.png');

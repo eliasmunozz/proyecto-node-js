@@ -1,0 +1,17 @@
+extends layout 
+
+block bodyContent 
+    main.container.my-4
+        h2.text-center Contáctanos
+        form
+            .mb-3
+            label.form-label(for="nombre") Nombre
+            input.form-control(type="text", id="nombre", required)
+            .mb-3
+            label.form-label(for="email") Correo Electrónico
+            input.form-control(type="email", id="email", required)
+            .mb-3
+            label.form-label(for="mensaje") Mensaje
+            textarea.form-control(id="mensaje", rows="4", required)
+            BR 
+            button.btn.btn-primary.w-100(type="submit") Enviar

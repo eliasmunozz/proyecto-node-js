@@ -1,0 +1,10 @@
+extends layout 
+
+block bodyContent 
+    main.container.my-4
+        h1 Ingresa el codigo de tu venta para activar tu mensaje
+
+        form(action='/activacionpolera/detalles', method='POST')
+            label(for='ventaId') Ingrese el ID de la venta:
+            input(type='text', name='ventaId', id='ventaId', required=true)
+            button(type='submit') Buscar Venta

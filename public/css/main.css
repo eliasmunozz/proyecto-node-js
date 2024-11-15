@@ -1,0 +1,54 @@
+    
+.containerSectionTop {
+    background-color: #d3d3d3; /* Fondo gris claro */
+    padding: 50px 20px;
+            
+}
+#productTop {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.fs-grande {
+    font-size: 4.5rem!important
+}
+.nav-link.active {
+  color: #007bff; /* Cambia el color del texto */
+  font-weight: bold; /* Cambia el grosor del texto */
+  background-color: #f8f9fa; /* Cambia el fondo si es necesario */
+  border-bottom: 2px solid #007bff; /* Añade un borde inferior */
+}
+.logoP {
+    background: gray;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.footer {
+    background-color: #d3d3d3;
+}
+.word-break-home {
+    word-wrap: break-word;
+}
+
+.navbar-toggler:focus {
+    outline: 1px solid #007bff !important;
+    box-shadow: none !important;
+}
+.navbar-toggler {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler.focus-visible {
+    outline: 1px solid #007bff; /* Personaliza el estilo del contorno */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        margin-top: 1px !important;
+    }
+}

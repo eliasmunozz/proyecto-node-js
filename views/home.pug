@@ -1,0 +1,73 @@
+extends layout 
+
+block bodyContent 
+    section.section.containerSectionTop
+      .container
+        .row.justify-content-center.align-items-center
+          .col-md-6
+            h2.fw-bold.mb-4.text-end.text-white.fs-grande.word-break-home Una polera que refleja tu mood instantáneamente
+          .col-md-2
+          .col-md-3
+                .product-card#productTop
+                    form
+                        .mb-3
+                            label.form-label.fw-bold Color
+                            div(class="form-check")
+                                input(class="form-check-input", type="radio", name="color", value="blanco", id="colores")
+                                label(class="form-check-label", for="colores") Blanco 
+                        .mb-3
+                            label.form-label.fw-bold Talla
+                            .d-flex.justify-content-between
+                                div(class="form-check")
+                                    input(class="form-check-input", type="radio", name="talla", value="S", id="tallaS")
+                                    label(class="form-check-label", for="tallaS") S
+                                    
+
+                                div(class="form-check")
+                                    input(class="form-check-input", type="radio", name="talla", value="M", id="tallaM")
+                                    label(class="form-check-label", for="tallaM") M
+
+                                div(class="form-check")
+                                    input(class="form-check-input", type="radio", name="talla", value="L", id="tallaL")
+                                    label(class="form-check-label", for="tallaL") L
+
+                                div(class="form-check")
+                                    input(class="form-check-input", type="radio", name="talla", value="XL", id="tallaXL")
+                                    label(class="form-check-label", for="tallaXL") XL
+                        
+
+
+                    a.btn.btn-dark.w-100(href="productos.html") COMPRAR
+
+    main
+      section.features.mt-5.container.my-5
+        .row.text-center
+          .col-md-4
+            .feature-image.bg-secondary.rounded-circle.mx-auto.mb-3(style="width: 200px; height: 200px; background-image: url(assets/fondoRedondo.png); background-repeat: no-repeat;background-size: cover;")
+            h3 Característica Destacada
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          .col-md-4
+            .feature-image.bg-secondary.rounded-circle.mx-auto.mb-3(style="width: 200px; height: 200px; background-image: url(assets/fondoRedondo.png); background-repeat: no-repeat;background-size: cover;")
+            h3 Característica Destacada
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          .col-md-4
+            .feature-image.bg-secondary.rounded-circle.mx-auto.mb-3(style="width: 200px; height: 200px; background-image: url(assets/fondoRedondo.png); background-repeat: no-repeat;background-size: cover;")
+            h3 Característica Destacada
+            p Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+      section.section.containerSectionTop
+        .container
+          .row.justify-content-center.align-items-center
+            .col-md-12
+              h2.fw-bold.mb-4.text-end.text-white.fs-grande “Creamos la primera polera que se adapta a tu día a día”
+
+      section.real-photos.text-center
+        .row
+          .col-md-3.col-sm-6.px-0
+            .photo.bg-secondary.d-flex.align-items-center.justify-content-center.text-white(style="height: 300px; background-image: url(assets/polera2.png); background-repeat: no-repeat;background-size: cover;") FOTO REAL
+          .col-md-3.col-sm-6.px-0
+            .photo.bg-dark.d-flex.align-items-center.justify-content-center.text-white(style="height: 300px; background-image: url(assets/polera.png); background-repeat: no-repeat;background-size: cover;") FOTO REAL
+          .col-md-3.col-sm-6.px-0
+            .photo.bg-secondary.d-flex.align-items-center.justify-content-center.text-white(style="height: 300px; background-image: url(assets/polera2.png); background-repeat: no-repeat;background-size: cover;") FOTO REAL
+          .col-md-3.col-sm-6.px-0
+            .photo.bg-dark.d-flex.align-items-center.justify-content-center.text-white(style="height: 300px; background-image: url(assets/polera.png); background-repeat: no-repeat;background-size: cover;") FOTO REAL

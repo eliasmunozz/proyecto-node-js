@@ -1,0 +1,21 @@
+extends layout 
+
+block bodyContent 
+    main.container.my-4
+        h2.text-center Productos
+        section.row.mt-5#productos
+                each producto in productos
+                    .col-md-4.mb-4
+                        .card
+                            img.card-img-top(src=producto.imagen_url, alt=producto.nombre)
+                            .card-body.text-center
+                                // Nombre del producto
+                                h5.card-title #{producto.nombre}
+                                // Descripción breve del producto
+                                p.card-text #{producto.descripcion}
+                                // Botón de "Agregar al Carro"
+                                button.btn.btn-primary Agregar al Carro
+                                
+
+
+                            

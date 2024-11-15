@@ -1,0 +1,75 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Página Principal
+        link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet")
+        link(rel="stylesheet" href="CSS/main.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css", integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD", crossorigin="anonymous")
+    body
+        header
+            nav.navbar.navbar-expand-lg.navbar-light.bg-light
+                .container
+                    // Botón de menú para pantallas pequeñas
+                    button.navbar-toggler(type="button", data-bs-toggle="collapse", data-bs-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+                        span.navbar-toggler-icon
+                    // Logo centrado en dispositivos móviles y a la izquierda en pantallas grandes
+                    a.navbar-brand.logoP.text-white(href="http://localhost:4000/")
+                        | Logo
+                    // Contenedor para íconos adicionales (si los necesitas en móvil)
+                    .d-flex.justify-content-end.d-lg-none
+                    
+                        a.nav-link.hamburger-icon(href="http://localhost:4000/micuenta")
+                            <i class="bi bi-cart4 fs-2"></i>
+                    
+
+                    // Menú de navegación
+                    .collapse.navbar-collapse(id="navbarNav")
+                        ul.navbar-nav.d-flex.justify-content-between.w-100
+                            li.nav-item
+                                a.nav-link.px-5(href="http://localhost:4000/") Inicio
+                            li.nav-item
+                                a.nav-link.px-5(href="http://localhost:4000/productos") Productos
+                            li.nav-item
+                                a.nav-link.px-5(href="http://localhost:4000/micuenta") Mi Cuenta
+                            li.nav-item
+                                a.nav-link.px-5(href="http://localhost:4000/activacionpolera") Activar Polera
+                            li.nav-item
+                                a.nav-link.px-5(href="http://localhost:4000/contacto") Contacto
+
+                    
+
+        block bodyContent 
+        
+        footer.footer
+            .container
+                .row
+                    .col-md-3.mt-5
+                        .logo Logo
+                    .col-md-3.col-sm-6.mt-5
+                        h5 Enlaces de interes
+                        ul.list-unstyled
+                            li
+                                a(href="terminosycondiciones.html") Términos y condiciones
+                            li
+                                a(href="condionesenvios.html") Política de cambios y devoluciones
+                            li
+                                a(href="politicaprivacidad.html") Política de privacidad
+                            li
+                                a(href="contacto.html") Contáctanos
+                    .col-md-3.col-sm-6.mt-5
+                        h5 Información Legal
+                        ul.list-unstyled
+                            li W&B S.A.
+                            li RUT: 77.604.501-2
+                            li Antonio Bellet 193 of 302, Providencia, Santiago
+                            li Teléfono: +56 2 21234567
+                    .col-md-3.mt-5
+                        h5 Partners de Pago y Envío
+                        img.partner-logo(style="height: 50px;width: 50px;" src="assets/fondoRedondo.png", alt="Logo Partner 1")
+                        img.partner-logo(style="height: 50px;width: 50px;" src="assets/fondoRedondo.png", alt="Logo Partner 2")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+    script(src="/js/linkactivomenu.js")
+    block jsAditional 
